@@ -4,3 +4,23 @@
     box-sizing: border-box;
     font-family: monospace;
 }
+
+:root{
+    --color-bg-50: #FFF7E0;
+    --color-bg-100: #FFECB3;
+    --color-bg-200: #FFE186;
+    --color-bg-300: #FFD558;
+    --color-bg-400: #FFCA2B;
+    --color-bg-500: #FCBD00;
+    --color-bg-600: #CF9B00;
+    --color-bg-700: #A27900;
+    --color-bg-800: #745700;
+    --color-bg-900: #473500;
+    --color-bg-950: #1A1300;
+}
+
+main{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: var(--color-bg-50);
+}
