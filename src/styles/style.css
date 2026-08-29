@@ -23,4 +23,42 @@ main{
     min-width: 100vw;
     min-height: 100vh;
     background: var(--color-bg-50);
+    display: flex;
+
+    & .content{
+        width: 100%;
+        padding: 64px 32px;
+    }
+
+    & .sidebar{
+        width: 400px;
+        background: var(--color-bg-100);
+        padding: 64px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        & .pfp{
+            width: 128px;
+            height: 128px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: var(--color-bg-50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & p{
+                font-size: 48px;
+                font-weight: bold;
+                font-family: Arial;
+            }
+        }
+
+        & footer{
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
 }
