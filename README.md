@@ -53,7 +53,6 @@ Le 5 missioni (ognuna vale fino a 20 punti):
 ```
 nuova-mente/
 ├── preview1/          # prototipo dimostrativo (index, room, missione, leaderboard)
-├── preview2/          # copia di lavoro più recente
 ├── src/               # bozza originale (HTML/CSS/JS vanilla)
 └── README.md
 ```
