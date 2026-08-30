@@ -4,11 +4,18 @@ class Links{
     }
 
     run(){
-        this.#catch_click();
+        document.querySelectorAll("[redirect]").forEach(element => {
+            element.addEventListener("click", (ev) => this.#catch_click(ev, element));
+        })
     }
 
-    #catch_click(){
-
+    /**
+     * @param {PointerEvent} click
+     * @param {Element} element
+     */
+    #catch_click(click, element){
+        const page = element.getAttribute("redirect");
+        window.location = page;
     }
 }
 
