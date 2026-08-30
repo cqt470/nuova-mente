@@ -8,10 +8,6 @@
     &.button-primary{
         background: var(--color-bg-100);
     }
-
-    &.button-secondary{
-        
-    }
 }
 
 .grid{
