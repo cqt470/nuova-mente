@@ -716,7 +716,6 @@ aside {
   resize: vertical;
 }
 
-<<<<<<< HEAD
 .field:focus {
   outline: none;
   border-color: var(--gold);
@@ -740,9 +739,6 @@ aside {
   padding-top: 14px;
   flex-shrink: 0;
 }
-=======
-.cause-row { display: flex; gap: 10px; align-items: flex-start; }
-.cause-num { font-family: var(--mono); font-weight: 700; font-size: 13px; color: var(--gold); padding-top: 14px; flex-shrink: 0; }
 .cause-del {
   flex-shrink: 0;
   width: 30px; height: 30px;
@@ -921,7 +917,6 @@ aside {
 }
 .btn-ghost-dark:hover { background: rgba(212, 167, 44, 0.15); }
 .no-anim .ring-progress, .no-anim .bar-fill { transition: none !important; }
->>>>>>> 0be2d7e075d2786528408958a439de09485b231e
 
 /* ---------- Chatbot (colonna a destra) ---------- */
 .chat-col {
@@ -1027,9 +1022,6 @@ aside {
   color: #efe4c3;
   border-top-left-radius: 4px;
 }
-<<<<<<< HEAD
-
-=======
 .bubble.user {
   align-self: flex-end;
   background: var(--gold);
@@ -1037,7 +1029,6 @@ aside {
   border-top-right-radius: 4px;
 }
 .typing.hidden { display: none; }
->>>>>>> 0be2d7e075d2786528408958a439de09485b231e
 .typing {
   align-self: flex-start;
   display: inline-flex;
@@ -1222,6 +1213,12 @@ footer .heart {
 
 [data-theme="dark"] .mission-card .goal {
   color: rgba(239, 228, 195, 0.85);
+}
+
+[data-theme="dark"] .mission-card .bar {
+  color: #EFE4C3;
+  background: rgba(239, 228, 195, 0.08);
+  border-top: 1px solid rgba(212, 167, 44, 0.3);
 }
 
 [data-theme="dark"] .field::placeholder {
