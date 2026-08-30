@@ -1,3 +1,5 @@
+@import "./elements.css";
+
 *{
     margin: 0;
     padding: 0;
@@ -33,21 +35,47 @@ main{
             font-size: 32px;
             border-bottom: 4px solid var(--color-bg-100);
             margin-bottom: 64px;
+            display: flex;
+            justify-content: space-between;
             
             & h1{
                 font-family: Geneva;
                 color: var(--color-bg-600);
             }
+
+            .actions{
+                display: flex;
+                align-items: center;
+                gap: 24px;
+            }
+        }
+
+        & .room-description{
+            background: var(--color-bg-100);
+            color: var(--color-bg-600);
+            padding: 16px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 32px;
+
+            & p{
+                font-size: 18px;
+
+                &.title{
+                    font-size: 24px;
+                    font-weight: bold;
+                    font-style: italic;
+                    margin-bottom: 12px;
+                }
+            }
         }
 
         & .cards{
-            display: flex;
-            flex-wrap: wrap;
             gap: 32px;
 
             & .card{
-                width: 300px;
-                max-height: 200px;
                 border-radius: 32px;
                 overflow: hidden;
                 background: var(--color-bg-100);
@@ -55,6 +83,7 @@ main{
                 cursor: pointer;
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
                 border: 1px solid var(--color-bg-50);
 
                 &:hover{
@@ -77,13 +106,35 @@ main{
 
                 & .details{
                     padding: 16px;
-                    padding-top: 8px;
                     border-top: 1px solid var(--color-bg-600);
 
                     & p.title{
                         font-weight: bold;
                         font-size: 18px;
                     }
+                }
+
+                &.card-descriptive{
+                    cursor: default;
+                    border: 1px solid var(--color-bg-600);
+                    background: var(--color-bg-50);
+
+                    & .details{
+                        border: none;
+                    }
+
+                    & p.title{
+                        font-size: 24px;
+                        font-weight: bold;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                & footer{
+                    width: 100%;
+                    background: var(--color-bg-800);
+                    color: var(--color-bg-50);
+                    padding: 8px 16px;
                 }
             }
         }
